@@ -1,0 +1,9 @@
+Receipt parsing implementation notes:
+- Endpoint: /api/receipt/parse (multipart upload)
+- Steps:
+  1) OCR image -> raw text
+  2) Gemini prompt: extract fields -> strict JSON
+  3) Return JSON for UI auto-fill
+- Environment variables to add:
+  - GEMINI_API_KEY
+
